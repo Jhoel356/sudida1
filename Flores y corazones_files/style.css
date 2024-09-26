@@ -176,6 +176,39 @@ body {
   -webkit-animation-delay: 1.7s;
   animation-delay: 1.7s;
 }
+.flower--4 {
+  -webkit-animation: moving-flower-1 4s linear infinite;
+  animation: moving-flower-1 4s linear infinite;
+}
+.flower--1 .flower__line {
+  height: 70vmin;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.flower--1 .flower__line__leaf--1 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 1.2s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 1.6s backwards;
+}
+.flower--1 .flower__line__leaf--2 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 1.2s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 1.4s backwards;
+}
+.flower--1 .flower__line__leaf--3 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 1.2s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 1.2s backwards;
+}
+.flower--1 .flower__line__leaf--4 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 2s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 1s backwards;
+}
+.flower--1 .flower__line__leaf--5 {
+  -webkit-animation: blooming-leaf-right var(--fl-speed) 2.8s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
+}
+.flower--1 .flower__line__leaf--6 {
+  -webkit-animation: blooming-leaf-left var(--fl-speed) 3s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 2s backwards;
+}
 .flower__leafs::after {
   content: "";
   position: absolute;
@@ -1990,7 +2023,7 @@ body {
   width: 100%;
   top: 15PX; /* Cambiado de "bottom: 10px;" a "top: 0;" */
   text-align: center;
-  font-size: 10px;
+  font-size: 30px;
   z-index: 9999;
   font-family: arial;
   color: #e06ae0;
